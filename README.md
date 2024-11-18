@@ -38,33 +38,6 @@ Make sure you follow the guidelines these guidelines to the rules of your game! 
 Tip: Discuss and Plan within your team, then select groups with a task, work on the task, meet up, merge, test, and repeat. 
 If you do not plan and share responsibilities, you will not be finished in time.
 
-### Chess ---------------------------------------------------
-
-#### Pieces, Move- and Hit-Logic
-- A Rook -> moves: Horizontally or vertically any number of squares. -> hits: Same as moves.
-- A Pawn -> moves: Forward one square. On its first move, it can move forward two squares. -> hit: Pawns capture diagonally.
-- A King -> One square in any direction. -> hit: Same as moves.
-- A Queen -> Any number of squares in any direction (horizontally, vertically, or diagonally). -> hit: same as moves
-- A Knight -> moves: In an “L” shape: two squares in one direction and then one square perpendicular, or one square in one direction and then two squares perpendicular. -> hit: same as moves.
-- A Programmer -> One square in any direction, similar to the King. -> hit: same as moves | special -> it can change places with friendly pieces, exchanging their place.
-- A Chancellor -> combines the moves of a rook and a knight -> hit: same as moves. | Special: Nothing except how it moves and hits.
-
-#### special tiles
-
-Barrier Pieces
-
-Rule: Place immovable barrier pieces on the board that block movement and captures.
-Implementation: Add barrier pieces to the board setup and modify movement and capture logic to account for these barriers.
-
-#### Special Board setup
-
-Programmers: Place two programmers somewhere in the initial lines of pawns. 
-Chancellor: Place one chancellor somewhere inside the line of pawns.
-
-#### Game End
-
-a game ends, if a players king has been removed, if a player cannot move any pieces (deadlock) or if the last three moves of a player were the same. 
-
 ### Checkers ---------------------------------------------------
 
 #### Pieces
@@ -74,9 +47,7 @@ Regular Piece
 Moves: Diagonally forward one square.
 Hits: Diagonally forward one square by jumping over an opponent’s piece.
 
-
-
-King
+King/Dame
 
 Moves: Diagonally forward or backward any number of squares.
 Hits: Diagonally forward or backward any number of squares by jumping over an opponent’s piece.
